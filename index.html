@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="DOMU Call Generator - Test and generate calls easily"
+    />
+    <meta property="og:title" content="DOMU Call Generator" />
+    <meta
+      property="og:description"
+      content="Generate test calls for DOMU AI platform"
+    />
+    <meta property="og:url" content="https://domu-test-calls.pages.dev/" />
+    <link rel="icon" type="image/png" href="https://domu.ai/favicon.ico" />
+    <title>DOMU Call Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>DOMU Call Generator</h2>
+    <form id="callForm">
+      <div class="form-group">
+        <label for="campaign_id">Campaign ID:</label>
+        <input
+          type="text"
+          id="campaign_id"
+          value="CMP81f50d25a428a40fb048bfa1836924a8"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="phone_number">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone_number"
+          placeholder="+1XXXXXXXXXX"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" required />
+      </div>
+      <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" required />
+      </div>
+      <div class="form-group">
+        <label for="external_id">External ID:</label>
+        <input type="text" id="external_id" required />
+      </div>
+      <div class="form-group">
+        <label for="debt_collection_company">Collection Company:</label>
+        <input type="text" id="debt_collection_company" required />
+      </div>
+      <div class="form-group">
+        <label for="total_debt">Total Debt Amount:</label>
+        <input
+          type="number"
+          id="total_debt"
+          placeholder="Enter amount"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label> <input type="checkbox" id="test" checked /> Test Mode </label>
+      </div>
+      <button type="submit">Generate Call</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
